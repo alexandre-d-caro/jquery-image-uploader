@@ -20,5 +20,4 @@ Options
 
 Authors
 -------
-
 Caro Alexandre
