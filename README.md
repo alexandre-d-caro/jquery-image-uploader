@@ -5,9 +5,8 @@ jQuery Plugin uploader for images
 
 Requirements
 ------------
-
-  jQuery
-  jQuery UI
+* jQuery
+* jQuery UI
   
 Installation
 ------------
