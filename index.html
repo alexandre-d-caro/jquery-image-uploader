@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="author" content="Alexandre Caro">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="shortcut icon" href="images/code.ico">
+	<link href='http://fonts.googleapis.com/css?family=Lato&amp;subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+	<title>Image Cropper</title>
+</head>
+<body>
+	<header>
+		<h3>Image Cropper</h3>
+	</header>
+	<div id="global">
+		<div class="half">
+			<form action="upload.php" id="target" method="post" enctype="multipart/form-data">
+				<input type="hidden" id="left" name="left">
+				<input type="hidden" id="top" name="top">
+				<p class="text-center">Upload your own image and select with your mouse the part of the new cropped image</p>
+				<div class="text-center">
+					<input type="file" name="picture" id="picture">
+				</div>
+				<div id="imgbox">
+					<div class='zone_zoom'>
+	    				<img src='' class='image' />
+	    				<img src='images/fondgris.png' class='image1' />
+					</div>
+				</div>
+				<div class="text-center">
+					<input type='submit' value='Générer la découpe' />
+				</div>
+			</form>
+		</div>
+		<div id="second" class="half">
+			<div class="invisible">
+				<h2>Your new cropped image : </h2>
+				<img src="" alt="New cropped image" width="" height="" id="result" />
+				<div id="url"></div>
+			<div>
+		</div>
+	</div>
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/jquery-ui.custom.min.js"></script>
+<script type="text/javascript" src="js/drag.js"></script>
+</body>
+</html>
